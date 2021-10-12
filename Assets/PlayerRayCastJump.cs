@@ -38,7 +38,7 @@ public class PlayerRayCastJump : MonoBehaviour
 
     void Jump()
     {
-        if (!isGrounded)
+        if (isGrounded)
         
             return;
             rb.AddForce(Vector2.up * jumpStrength, ForceMode2D.Impulse);
